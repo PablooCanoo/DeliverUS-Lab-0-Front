@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
-export default function ControlPanelScreen () {
+export default function RestaurantDetailScreen ({ route }) {
+  const { id } = route.params
   return (
         <View style={styles.container}>
-            <Text>Control Panel</Text>
+            <Text>Restaurant details. Id: {id}</Text>
         </View>
   )
 }

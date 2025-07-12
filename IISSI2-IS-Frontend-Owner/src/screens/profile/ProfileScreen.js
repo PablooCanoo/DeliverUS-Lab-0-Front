@@ -1,10 +1,12 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
+import SystemInfo from '../../components/SystemInfo'
 
-export default function ControlPanelScreen () {
+export default function ProfileScreen () {
   return (
         <View style={styles.container}>
-            <Text>Control Panel</Text>
+            <Text>Profile</Text>
+            <SystemInfo />
         </View>
   )
 }
